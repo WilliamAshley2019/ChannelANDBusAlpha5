@@ -3,7 +3,7 @@ Merging of audio stream will need to be figured this may work into the audio sum
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
 Note this is also super cool as current in admin the global pool allows sharing between programs - so ths allows for audio to be shared between different instances of fl studio effective mergiung the audio from one instance of fl studio
-to channel rack of another instance of fl studio. 
+to channel rack of another instance of fl studio.  Or I would think maybe any other instance of a daw or music program  that can load of generator / vsti . Likewise it can send audio from any source that can laod a plugin effect.
 
 I am going to see about doing a local memory pool version to see if it can be used at user level maybe today as people may not want to run their daw as administrator.
 
