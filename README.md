@@ -2,6 +2,9 @@ OK this is a work in progress but the concept works so far.  (however still bugg
 Merging of audio stream will need to be figured this may work into the audio summing aspect but curious how this will be done in a low latency framwork??
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
+Note this is also super cool as current in admin the global pool allows sharing between programs - so ths allows for audio to be shared between different instances of fl studio effective mergiung the audio from one instance of fl studio
+to channel rack of another instance of fl studio. 
+
 I am going to see about doing a local memory pool version to see if it can be used at user level maybe today as people may not want to run their daw as administrator.
 
 Anywho. So how this plugin works.
