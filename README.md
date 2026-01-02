@@ -1,5 +1,5 @@
 OK this is a work in progress but the concept works so far.  (however still buggy currently multiple audio stream processing is screwing up sonot working as intented on the multimemory streamaspect.. sonot functional yet but met the milestone)  I think it may relate to Bus's  memory pool as it may be configured to only handle a buffer of a single channels audio data quanity so I may need to dynamically allocate bus's share access pool to allow multistream channel inputs.
-
+Merging of audio stream will need to be figured this may work into the audio summing aspect but curious how this will be done in a low latency framwork??
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
 I am going to see about doing a local memory pool version to see if it can be used at user level maybe today as people may not want to run their daw as administrator.
