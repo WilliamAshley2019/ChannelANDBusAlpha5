@@ -1,4 +1,4 @@
-OK this is a work in progress but the concept works so far.  (however still buggy currently multiple audio stream processing is screwing up sonot working as intented on the multimemory streamaspect.. sonot functional yet but met the milestone) 
+OK this is a work in progress but the concept works so far.  (however still buggy currently multiple audio stream processing is screwing up sonot working as intented on the multimemory streamaspect.. sonot functional yet but met the milestone)  I think it may relate to Bus's  memory pool as it may be configured to only handle a buffer of a single channels audio data quanity so I may need to dynamically allocate bus's share access pool to allow multistream channel inputs.
 
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
