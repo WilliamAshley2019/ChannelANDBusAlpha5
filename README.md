@@ -1,4 +1,4 @@
-OK this is a work in progress but the concept works so far.
+OK this is a work in progress but the concept works so far.  (however still buggy currently multiple audio stream processing is screwing up sonot working as intented on the multimemory streamaspect.. sonot functional yet but met the milestone) 
 
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
