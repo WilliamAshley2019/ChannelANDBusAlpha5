@@ -1,9 +1,12 @@
 OK this is a work in progress but the concept works so far.  (however still buggy currently multiple audio stream processing is screwing up sonot working as intented on the multimemory streamaspect.. sonot functional yet but met the milestone)  I think it may relate to Bus's  memory pool as it may be configured to only handle a buffer of a single channels audio data quanity so I may need to dynamically allocate bus's share access pool to allow multistream channel inputs.
-Merging of audio stream will need to be figured this may work into the audio summing aspect but curious how this will be done in a low latency framwork??
+Merging of audio stream will need to be figured this may work into the audio summing aspect but curious how this will be done in a low latency framweork??
 You must run your daw as admin as it uses windows.h shared global memory pool to route audio.
 
 Note this is also super cool as current in admin the global pool allows sharing between programs - so ths allows for audio to be shared between different instances of fl studio effective mergiung the audio from one instance of fl studio
 to channel rack of another instance of fl studio.  Or I would think maybe any other instance of a daw or music program  that can load of generator / vsti . Likewise it can send audio from any source that can laod a plugin effect.
+
+Interestingly this may bea  side effect of the global / administrator mode I think a local may be a little more limited, it may in fact work on that entire user's session, while a session only memory share would maybe be more limited.
+I'm not entirely sure the implications for inter program sharing of data streams but it seems that global has the most privleges. Something to read up on. 
 
 I am going to see about doing a local memory pool version to see if it can be used at user level maybe today as people may not want to run their daw as administrator.
 
